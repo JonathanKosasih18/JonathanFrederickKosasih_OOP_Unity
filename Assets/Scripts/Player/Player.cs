@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    Player Instance;
+    public static Player Instance { get; private set; }
     PlayerMovement playerMovement;
     Animator animator;
 
@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         playerMovement.Move();
+        playerMovement.MoveBound();
     }
 
     void LateUpdate()

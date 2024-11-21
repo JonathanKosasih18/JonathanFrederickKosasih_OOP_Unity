@@ -6,10 +6,14 @@ public class EnemyTargeting : Enemy
 {
     float distanceToPlayer;
     public float speed = 2f;
+    public CombatManager combatManager;
     void Start()
     {
-        
+        combatManager = GameObject.Find("CombatManager").GetComponent<CombatManager>();
     }
+
+    public string name = "EnemyTargeting";
+    public int level = 2;
 
     // Update is called once per frame
     void Update()
@@ -30,6 +34,8 @@ public class EnemyTargeting : Enemy
         Vector2 maxScreenBounds = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
         if (transform.position.x < minScreenBounds.x || transform.position.x > maxScreenBounds.x || transform.position.y < minScreenBounds.y || transform.position.y > maxScreenBounds.y)
         {
+            Debug.Log("Enemy out of bounds");
+            combatManager.totalEnemies--;
             Destroy(gameObject);
         }
     }
@@ -39,6 +45,8 @@ public class EnemyTargeting : Enemy
         // Check if the object collided with has the tag "Player"
         if (collision.gameObject.CompareTag("Player"))
         {
+            Debug.Log("Enemy collided with player");
+            combatManager.totalEnemies--;
             Destroy(gameObject);
         }
     }

@@ -136,6 +136,7 @@ MonoBehaviour:
   speed: 2
   shootIntervalInSeconds: 0.75
   bulletPrefab: {fileID: 8230875895815031751, guid: ca098e8f7414ced4db3db08d26711b0e, type: 3}
+  combatManager: {fileID: 0}
 --- !u!70 &7628451704518912822
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -197,7 +198,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cabf833ec9fb25f4a8debe0408bc7d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 50
+  enemySpawner: []
+  combatManager: {fileID: 0}
 --- !u!114 &7079866135346644082
 MonoBehaviour:
   m_ObjectHideFlags: 0

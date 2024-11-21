@@ -16,10 +16,15 @@ public class HealthComponent : MonoBehaviour
         get { return health; }
     }
 
+    public EnemySpawner[] enemySpawner;
+    public CombatManager combatManager;
+
     // Initialization
     void Start()
     {
         health = maxHealth;
+        combatManager = GameObject.Find("CombatManager").GetComponent<CombatManager>();
+        enemySpawner = combatManager.enemySpawners;
     }
 
     // Method to subtract health
@@ -30,6 +35,18 @@ public class HealthComponent : MonoBehaviour
         // Check if health is below or equal to zero
         if (health <= 0)
         {
+            for (int i = 0; i < enemySpawner.Length; i++)
+            {
+                if (enemySpawner[i].spawnedEnemy.name == gameObject.GetComponent<Enemy>().name.Replace("(Clone)", "").Trim()) // Check if the enemy spawner is the same as the enemy
+                {
+                    enemySpawner[i].totalKill++;
+                    enemySpawner[i].totalKillWave++;
+                }
+                Debug.Log("Enemy Spawner: " + enemySpawner[i].spawnedEnemy.name);
+                Debug.Log(gameObject.GetComponent<Enemy>().name.Replace("(Clone)", "").Trim());
+            }
+            Debug.Log("Enemy Killed");
+            combatManager.totalEnemies--;
             Destroy(gameObject); // Destroy the object
         }
     }

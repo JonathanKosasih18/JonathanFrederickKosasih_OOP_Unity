@@ -5,11 +5,15 @@ using UnityEngine;
 public class EnemyHorizontal : Enemy
 {
     [SerializeField] float speed = 1f;
+    public CombatManager combatManager;
 
     void Start()
     {
-        
+        combatManager = GameObject.Find("CombatManager").GetComponent<CombatManager>();
     }
+
+    public string name = "EnemyHorizontal";
+    public int level = 1;
 
     // Update is called once per frame
     void Update()
@@ -31,6 +35,7 @@ public class EnemyHorizontal : Enemy
         Vector2 maxScreenBounds = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
         if (transform.position.x < minScreenBounds.x || transform.position.x > maxScreenBounds.x)
         {
+            combatManager.totalEnemies--;
             Destroy(gameObject);
         }
     }

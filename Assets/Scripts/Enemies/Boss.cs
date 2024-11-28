@@ -19,7 +19,6 @@ public class Boss : Enemy
     private float timer;
     public CombatManager combatManager;
     public string name = "Boss";
-    public int level = 3;
 
     void Awake()
     {
@@ -51,6 +50,7 @@ public class Boss : Enemy
     void Start()
     {
         combatManager = GameObject.Find("CombatManager").GetComponent<CombatManager>();
+        level = 3;
     }
 
     void Update()

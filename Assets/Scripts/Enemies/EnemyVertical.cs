@@ -10,10 +10,10 @@ public class EnemyVertical : Enemy
     void Start()
     {
         combatManager = GameObject.Find("CombatManager").GetComponent<CombatManager>();
+        level = 1;
     }
 
     public string name = "EnemyVertical";
-    public int level = 1;
 
     // Update is called once per frame
     void Update()

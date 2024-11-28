@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/GameUI/ChooseWeaponUSS.uss?fileID=7433441132597879392&amp;guid=204cf85c3adfb8440a80633a0c163cbe&amp;type=3#ChooseWeaponUSS" />
+    <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
+        <ui:Label tabindex="-1" text="please choose a weapon" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Select" style="justify-content: flex-start; color: rgb(255, 255, 255); -unity-text-align: upper-center; margin-top: 200px; -unity-font: url(&quot;project://database/Assets/GameUI/Font/The%20Wild%20Breath%20of%20Zelda.otf?fileID=12800000&amp;guid=74a2f830591475e42a5f87396329852f&amp;type=3#The Wild Breath of Zelda&quot;); -unity-font-definition: initial; font-size: 28px;" />
+        <ui:Label tabindex="-1" text="SPACE INVADERS" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="-unity-text-align: upper-center; padding-top: 300px; color: rgb(255, 255, 255); font-size: 96px; -unity-font: url(&quot;project://database/Assets/GameUI/Font/The%20Wild%20Breath%20of%20Zelda.otf?fileID=12800000&amp;guid=74a2f830591475e42a5f87396329852f&amp;type=3#The Wild Breath of Zelda&quot;); -unity-font-definition: initial;" />
+    </ui:VisualElement>
+</ui:UXML>

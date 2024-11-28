@@ -47,6 +47,7 @@ public class HealthComponent : MonoBehaviour
             }
             Debug.Log("Enemy Killed");
             combatManager.totalEnemies--;
+            combatManager.points += 10;
             Destroy(gameObject); // Destroy the object
         }
     }

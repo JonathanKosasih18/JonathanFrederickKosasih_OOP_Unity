@@ -9,6 +9,7 @@ public class CombatManager : MonoBehaviour
     [SerializeField] private float waveInterval = 5f;
     public int waveNumber = 1;
     public int totalEnemies = 0;
+    public int points = 0;
 
     void Start()
     {
@@ -51,18 +52,7 @@ public class CombatManager : MonoBehaviour
     public void SetSpawningStatus(EnemySpawner enemySpawner, bool status)
     {
         // if (enemySpawner.spawnedEnemy is Boss && Boss.level <= waveNumber)
-        // {
-        //     enemySpawner.isSpawning = status;
-        // }
-        // else if (enemySpawner.spawnedEnemy is EnemyTargeting && EnemyTargeting.level <= waveNumber)
-        // {
-        //     enemySpawner.isSpawning = status;
-        // }
-        // else if (enemySpawner.spawnedEnemy is EnemyVertical && EnemyVertical.level <= waveNumber)
-        // {
-        //     enemySpawner.isSpawning = status;
-        // }
-        // else if (enemySpawner.spawnedEnemy is EnemyHorizontal && EnemyHorizontal.level <= waveNumber)
+        // if (enemySpawner.spawnedEnemy.level <= waveNumber)
         // {
         //     enemySpawner.isSpawning = status;
         // }

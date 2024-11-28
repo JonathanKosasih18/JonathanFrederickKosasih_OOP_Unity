@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public int enemyType;
+    public int level;
 
     void Start()
     {

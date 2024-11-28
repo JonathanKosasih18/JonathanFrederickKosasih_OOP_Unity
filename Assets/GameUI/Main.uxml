@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement style="flex-grow: 1; margin-left: 12px; margin-top: 12px;">
+            <ui:Label tabindex="-1" text="HEALTH:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Health" style="margin-left: 8px; -unity-font: url(&quot;project://database/Assets/GameUI/Font/The%20Wild%20Breath%20of%20Zelda.otf?fileID=12800000&amp;guid=74a2f830591475e42a5f87396329852f&amp;type=3#The Wild Breath of Zelda&quot;); -unity-font-definition: initial; font-size: 28px; margin-right: 8px; color: rgb(255, 255, 255);" />
+            <ui:Label tabindex="-1" text="POINTS:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Points" style="margin-left: 8px; -unity-font: url(&quot;project://database/Assets/GameUI/Font/The%20Wild%20Breath%20of%20Zelda.otf?fileID=12800000&amp;guid=74a2f830591475e42a5f87396329852f&amp;type=3#The Wild Breath of Zelda&quot;); -unity-font-definition: initial; font-size: 28px; margin-right: 8px; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; margin-right: 12px; margin-top: 12px;">
+            <ui:Label tabindex="-1" text="WAVE: " parse-escape-sequences="true" display-tooltip-when-elided="true" name="Wave" style="margin-left: 8px; -unity-font: url(&quot;project://database/Assets/GameUI/Font/The%20Wild%20Breath%20of%20Zelda.otf?fileID=12800000&amp;guid=74a2f830591475e42a5f87396329852f&amp;type=3#The Wild Breath of Zelda&quot;); -unity-font-definition: initial; font-size: 28px; -unity-text-align: upper-right; margin-right: 8px; color: rgb(255, 255, 255);" />
+            <ui:Label tabindex="-1" text="ENEMIES LEFT: " parse-escape-sequences="true" display-tooltip-when-elided="true" name="Enemies" style="margin-left: 8px; -unity-font: url(&quot;project://database/Assets/GameUI/Font/The%20Wild%20Breath%20of%20Zelda.otf?fileID=12800000&amp;guid=74a2f830591475e42a5f87396329852f&amp;type=3#The Wild Breath of Zelda&quot;); -unity-font-definition: initial; font-size: 28px; -unity-text-align: upper-right; margin-right: 8px; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

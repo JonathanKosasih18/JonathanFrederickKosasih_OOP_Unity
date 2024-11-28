@@ -10,10 +10,10 @@ public class EnemyTargeting : Enemy
     void Start()
     {
         combatManager = GameObject.Find("CombatManager").GetComponent<CombatManager>();
+        level = 2;
     }
 
     public string name = "EnemyTargeting";
-    public int level = 2;
 
     // Update is called once per frame
     void Update()
